@@ -1,0 +1,11 @@
+header {
+    background-color: #222;
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2 {
+    margin: 0;
+}
