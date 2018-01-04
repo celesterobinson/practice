@@ -4,7 +4,7 @@ function Navbar(props) {
     return (
         <div className="Nav" style={props.backgroundColor}>
             {props.links.map((link) => {
-                return <a style={props.color} 6y7href={link.href}>{link.name}</a>
+                return <a style={props.color} href={link.href}>{link.name}</a>
             })}
         </div>
     )

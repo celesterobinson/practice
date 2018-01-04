@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import Gallery from "./Gallery";
+import Div from "./Div";
 
 function App(props) {
     let links = [{
@@ -18,6 +20,7 @@ function App(props) {
             <h1>Welcome to {props.name}</h1>
             <h2>Founded by {props.founder}</h2>
             <Navbar links={links} backgroundColor={{backgroundColor: "blue"}} color={{color: "white"}}></Navbar>
+            <Gallery></Gallery>
         </div>  
     )
 }

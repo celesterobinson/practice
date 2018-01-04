@@ -7,6 +7,5 @@ ReactDOM.render(
     <App 
         name="Jerb" 
         founder="Tim"
-        
-    />, 
-    document.getElementById("root"));
+
+    />, document.getElementById("root"));
