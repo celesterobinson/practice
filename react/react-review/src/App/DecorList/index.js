@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import items from "../../shared/decor.json";
 
 import Item from "./Item";
+import Form from "./Form"
 
 class DecorList extends Component {
     constructor(props) {
@@ -9,6 +10,9 @@ class DecorList extends Component {
         this.state = {
             items: items
         }
+        this.addItem = this.addItem.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
+        this.editItem = this.editItem.bind(this);
     }
     addItem(item) {
         this.setState((prevState) => {
@@ -27,7 +31,7 @@ class DecorList extends Component {
             }
         })
     }
-    edit(i, editedItem) {
+    editItem(editedItem, i) {
         this.setState((prevState) => {
             let newItems = [...prevState.items];
             newItems[i] = editedItem;
@@ -40,8 +44,9 @@ class DecorList extends Component {
         let { items } = this.state;
         return (
             <div className="decor-list">
+                <Form submit={this.addItem}></Form>
                 {items.map((item, i) => {
-                    return <Item key={i}{...item}></Item>
+                    return <Item index={i} editItem={this.editItem} deleteItem={this.deleteItem} key={i}{...item}></Item>
                 })}
             </div>
         )
