@@ -28,7 +28,7 @@ class Form extends Component {
     handleSubmit(event) {
         event.preventDefault();
         this.props.submit(this.state.inputs, this.props.index);
-        this.clearInputs();
+        this.props. clear ? this.clearInputs() : null;
     }
 
     clearInputs() {
