@@ -29,7 +29,6 @@ class SignupForm extends Component {
         alert(`Welcome to my useless app, ${username}!!`);
     }
 
-    
     render(){
         console.log(this.state.inputs);
         let {username, password} = this.state.inputs;

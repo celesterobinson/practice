@@ -49,7 +49,7 @@ class Characters extends Component {
                     <h1>Sorry, your data is unavailable.</h1>
                     <h1>{errMsg}</h1>
                 </div>
-                :
+                :  
                 <div>
                     {characters.map((character, i) => {
                         let {name, gender, eye_color} = character;
