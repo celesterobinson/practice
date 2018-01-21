@@ -19,4 +19,5 @@ function Counter(props) {
 const mapStateToProps = (state) => {
     return {count: state.count};
 }
+
 export default connect(mapStateToProps, {handleCount})(Counter);
