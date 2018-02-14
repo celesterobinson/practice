@@ -30,7 +30,7 @@ class Form extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        let { editRecipe, addRecipe, add, edit, index } = this.props;
+        let { editRecipe, addRecipe, add, index } = this.props;
         if (add) {
             addRecipe(this.state.inputs);
         } else {
